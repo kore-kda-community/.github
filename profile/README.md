@@ -8,7 +8,8 @@ AI-focused development (community-based effort) for the Kadena Chainweb blockcha
 
 ## Repositories of Interest
 
-_No public repositories yet._
+- [`org-bootstrap`](https://github.com/kore-kda-community/org-bootstrap) — Go rewrite: org-bootstrap, org-audit, org-release — one toolchain for GitHub org setup and release pipelines
+
 
 ## Download Builds
 
@@ -32,11 +33,12 @@ Running your own org and want the same structure? The tool we use to set this up
 
 **[homebrew-tap-app](https://github.com/kore-kda-community/homebrew-tap-app)** — a single script that scaffolds:
 
-- **`.github`** — org profile README + shared community health files
-- **`releases`** — central hub where every tagged build lands
-- **`homebrew-tap`** — package manager formulae, auto-bumped by CI
+- **.github** — org profile README + shared community health files
+- **releases** — central hub where every tagged build lands
+- **homebrew-tap** — package manager formulae, auto-bumped by CI
 - **Source repos** — one per project, with branch layout for project work
-- **Release workflow** — GoReleaser config + GitHub Actions; tag → build → publish → formula bump, fully automated
-- **Release schedule** — driven by tags, so `git tag vX.Y.Z && git push --tags` is the whole workflow
+- **Release workflow** — GoReleaser config + GitHub Actions; tag -> build -> publish -> formula bump, fully automated
+- **Release schedule** — driven by tags, so git tag vX.Y.Z && git push --tags is the whole workflow
 
-Clone it, point it at your org, run `./run.sh`. Safe to re-run.
+Clone it, point it at your org, run ./run.sh. Safe to re-run.
+
